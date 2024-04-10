@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        /* width: 300px;
+        height: 400px; */
+        padding: 30px;
+        min-width: 100px; 
+         min-height: 100px;
+        border: 1px solid black;
+    }
+    #upper{
+        background-color: blue;
+    }
+    #middle{
+        background-color: blueviolet;
+    }
+    #inner{
+        background-color: brown;
+    }
+</style>
+<body>
+    <h1>Event bubbling and event capturing(trikling)</h1>
+    disadvantages of event bubbling is all event will not bubble like scroll, screen resize, blur, focus etc...
+    Benefits of event delegation:
+1 improves memory space<br/>
+2 mitigates risk of performance bottle neck(giving addEventListner to upper element instead of giving to addEventListener for every button)<br/>
+3 Dom manipulation<br/>
+4 when elements get added dynamically, the process of adding events is slow<br/>
+Limitations:<br/>
+1 All the events are not bubbled up, some events like blur, focus are not bubbled up<br/>
+2 if e.stopPropogation is used in child, then events are not bubbled up<br/>
+
+
+    <div id="upper">
+        <div id="middle">
+            <div id="inner"></div>
+        </div>
+    </div>
+<h2>Event Delegation: in event bubbling we have to give addEventListner for every element it is difficult for large scale so 
+    event delegation has one addEventListner() in upper div and in inner element we can have list of items if we click any item 
+    it will bubble out to upper with that item(Ecommerce website).</h2>
+    <p>event delegation in (Ecommerce website)</p>
+<div id="category">
+    <li id="laptop">Laptops</li>
+    <li id="camera">Cameras</li>
+    <li id="shoe">Shoes</li>
+</div>
+
+<p>Event delegation in Form</p>
+<form id="form">
+<input name="firstName" id="firstName" type="text" data-uppercase />
+<input name="lastName" id="lastName" type="text"  data-uppercase/>
+<input name="phone" id="phone" type="number"  />
+<input name="email" id="email" type="email"/>
+</form>
+    <p>If we are not pass third parameter in addEventListner (Boolean) ie:- eventbulling should happen 
+        or event capturing should happen the by default eventbulling will happen(addEventListner third parameter bydefault false)</p>
+    <!-- <script src="DocumentObjectModel.js"></script> -->
+    <script src="callBindApply.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-color: blanchedalmond;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.text_color_brown{
+    color: brown;
+}

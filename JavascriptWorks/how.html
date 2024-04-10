@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Javascript is Synchronous Single threaded language: after completing curren line code exicution then only it
+        moves to next line</p>
+
+    <p>When javascript start exicution or run it will create exicution context it contains memmory component and code
+        component, memory component also called variable environment and code component also called thread of exicution.
+    </p>
+    <p>In memory componet store all the variable and functions, allocate the memory to all the variable and functions
+        and initially all variable has undefined and function store holl code of function</p>
+    <p>When second phase start that is code exicution face then in memmory face variable which has undefined tha will be
+        store value.
+        <br />
+        When go to function invoke then new exicution context will be create.
+    </p>
+    <h1>To manage exicution context creation and deletion it has <b>call stack</b></h1>
+    <p>When ever program run Global exicution context will push in to stack and when function is invoked and new
+        exicution is created then that exicution context will push into call stack(E1) when exicution of first function
+        is complete then E1 is pop out from call stack, then next function will repeate push and pop finally Global
+        exicution context will pop out.</p>
+    <script src="howjsworks.js"></script>
+</body>
+
+</html>

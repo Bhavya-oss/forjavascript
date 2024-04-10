@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess my number!</title>
+</head>
+
+<body id="">
+    <header>
+        <h2>Guess My Number</h2>
+        <div class="message">Doing DOM manipulation</div>
+        <p class="p">Synchronous </p>
+    </header>
+    <div style="width: 50%; margin: auto;">
+        <section>
+            <div style="display: flex; justify-content: space-between;">
+                <button id="again">Again!</button>
+                <p>(Between 1 and 20)</p>
+            </div>
+
+        </section>
+        <section id="randomNumber"></section>
+        <section style="display: flex; justify-content: space-around;">
+            <div>
+                <input id="numberField" name="number" />
+                <button id="check">Check!</button>
+            </div>
+            <div>
+                <h1 id="startGuess">Start guessing</h1>
+
+                <h5>Score: <span id="score">20</span></h5>
+                <h5>Highscore:<span id="heighScore">0</span></h5>
+            </div>
+        </section>
+    </div>
+    <script src="guessmynumber.js"></script>
+</body>
+
+</html>

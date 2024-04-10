@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Function are another type of object</h3>
+    <h4>Store functions in variable or properties</h4>
+    const add= (a,b) => a+b;
+    const counter = {
+        value:23;
+        inc:function(){this.value++;}
+    }
+    <h4>Pass functions as arguments to other function</h4>
+    const greet = () => console.log("Het Jonas");
+    btnclose.addevenListener("click", greet)//passing greet as value to addevenListener function.
+    <h4>Return function from function</h4> 
+    <h4>Function also as methods like array:call methods on functions
+        counter.inc.bind(someOtherObject);
+    </h4>
+    <button id="btnClose">Click</button>
+    
+    <!-- <script src="ACloserLookatFunctions.js"></script> -->
+    <!-- atuomaticaly assign value to key -->
+    <!-- <script src="objectLiterals.js"></script> -->
+    <!-- <script src="higherOrderFunction.js"></script> -->
+    <script src="closures.js"></script>
+</body>
+</html>
